@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularReferenceFinder", "CircularReferenceFinder\CircularReferenceFinder.csproj", "{3699F367-8882-4D4C-A0D7-B67B680A8BEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularReferenceFinder.Tests", "CircularReferenceFinder.Tests\CircularReferenceFinder.Tests.csproj", "{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
