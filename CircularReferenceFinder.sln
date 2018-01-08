@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularReferenceFinder", "CircularReferenceFinder\CircularReferenceFinder.csproj", "{3699F367-8882-4D4C-A0D7-B67B680A8BEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularReferenceFinder", "src\CircularReferenceFinder\CircularReferenceFinder.csproj", "{3A52F312-E28F-4736-BD81-C6CF4FC7182B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularReferenceFinder.Tests", "CircularReferenceFinder.Tests\CircularReferenceFinder.Tests.csproj", "{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F4381DB5-BAF3-4094-938B-60E7B6A5B802}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5A4581E5-84D3-46E3-BA66-5DE32B9551E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularReferenceFinder.Tests", "test\CircularReferenceFinder.Tests\CircularReferenceFinder.Tests.csproj", "{5D9E11BD-567A-4D88-AB26-37F70C4DEA9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +17,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3699F367-8882-4D4C-A0D7-B67B680A8BEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{956BC822-CC0E-4E9C-AFA0-01B5C8415D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A52F312-E28F-4736-BD81-C6CF4FC7182B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A52F312-E28F-4736-BD81-C6CF4FC7182B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A52F312-E28F-4736-BD81-C6CF4FC7182B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A52F312-E28F-4736-BD81-C6CF4FC7182B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D9E11BD-567A-4D88-AB26-37F70C4DEA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D9E11BD-567A-4D88-AB26-37F70C4DEA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D9E11BD-567A-4D88-AB26-37F70C4DEA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D9E11BD-567A-4D88-AB26-37F70C4DEA9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A52F312-E28F-4736-BD81-C6CF4FC7182B} = {F4381DB5-BAF3-4094-938B-60E7B6A5B802}
+		{5D9E11BD-567A-4D88-AB26-37F70C4DEA9B} = {5A4581E5-84D3-46E3-BA66-5DE32B9551E1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78747BCC-CACE-4554-9C8D-B8412B28894D}
 	EndGlobalSection
 EndGlobal

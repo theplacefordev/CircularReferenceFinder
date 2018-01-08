@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$id$</title>
+    <authors>$author$</authors>
+    <owners>theplacefordev</owners>
+    <projectUrl>https://github.com/theplacefordev/CircularReferenceFinder/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<releaseNotes>$releaseNotes$</releaseNotes>
+    <description>$description$</description>
+    <copyright>$copyright$</copyright>
+    <tags>cirular reference</tags>
+  </metadata>
+</package>

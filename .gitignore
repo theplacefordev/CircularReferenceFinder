@@ -270,19 +270,10 @@ paket-files/
 # CodeRush
 .cr/
 
-# Python Tools for Visual Studio (PTVS)
-__pycache__/
-*.pyc
+# Build script artifacts and tools
+.artifacts
+.build
+.buildtools
+.logs
+.packages
 
-# Cake - Uncomment if you are using it
-# tools/**
-# !tools/packages.config
-
-# Telerik's JustMock configuration file
-*.jmconfig
-
-# BizTalk build output
-*.btp.cs
-*.btm.cs
-*.odx.cs
-*.xsd.cs
