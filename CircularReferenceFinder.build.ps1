@@ -104,9 +104,7 @@ task Package `
     $nuspecFiles = Get-ChildItem -Path $SourcesDir -Recurse *.nuspec | ForEach-Object { $PSItem.FullName }
     assert ($nuspecFiles.Count -gt 0) "No .nuspec files found in '$SourcesDir' and it subdirectories"
     # Prepare global release notes
-    $releaseNotes = [ordered] @{
-        "" = (exec { & $Git log -1 --format="%B" }) -Join "`n";
-    }
+    $releaseNotes = (exec { & $Git log -1 --format="%B" }) -Join "`n"
     #$releaseNotesText
     Foreach ($nuspecFile in $nuspecFiles) {
         Write-Output("Processing file: $nuspecFile")
@@ -122,7 +120,7 @@ task Package `
         }
         $assemblyVersion = [Reflection.AssemblyName]::GetAssemblyName($assemblyFile).Version.ToString()
         # HACK: it seems weird, but spaces even in a quoted variable breaks nuget CLI argument parser
-        $releaseNotesText = (($releaseNotes.GetEnumerator() | % { "$($_.Key): $($_.Value)" }) -Join "`n").Replace(' ', "$([char] 0xa0)")
+        $releaseNotesText = $releaseNotes
         # Another problem caused by nuget argument parser, platform name should not contain any spaces e.g. Any CPU -> AnyCPU
         $platform = $Platform.Replace(" ", "") 
         $properties = "Configuration=$Configuration;Platform=$platform;VersionPart=$RevisionNumber;releaseNotes=<![CDATA[$releaseNotesText]]>;"
